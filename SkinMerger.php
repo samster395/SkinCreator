@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 /* Lets make the image merging work with this version of PHP */
 putenv('GDFONTPATH=' . realpath('.'));
 /* Making the image */
