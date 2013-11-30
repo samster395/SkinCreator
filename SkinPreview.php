@@ -5,8 +5,8 @@ function flip($src) { //Function for flipping the image horizontally
         for($j = 0; $j < 12; $j++) {
             $col = imagecolorat($src, 3-$i, $j);
             imagesetpixel($out, $i, $j, $col);
-                }
         }
+    }
     return $out;
 }
 //Get resources
@@ -14,15 +14,15 @@ $username = $_GET["name"];
 $link = $_GET["skin"];
 //Check if it's for previewing generated image
 if($link != "") {
-	$mcskinl = "http://zachary.site88.net/SkinCreator/SkinMerger.php?name=".$username."&skin=".$link;
+	$mcskinl = "http://maxsa.li/pigu/SkinCreator/SkinMerger.php?name=".$username."&skin=".$link;
 }
 else {
 	$mcskinl = "http://s3.amazonaws.com/MinecraftSkins/".$username.".png";
 }
 $skin = imagecreatefrompng($mcskinl);
 
-if(!$skin | imagesx($skin) != 64 | imagesy($skin) != 32) {
-	$skin = imagecreatefrompng("steve.png");
+if(!$skin) {
+	$skin = imagecreatefrompng("./assets/images/steve.png");
 }
 //Create images
 $body = imagecreatetruecolor(128, 260);

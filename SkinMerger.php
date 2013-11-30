@@ -8,7 +8,8 @@ $templateskinl = "./assets/images/".$skintype.".png";
 $playerskin    = imagecreatefrompng($mcskinl);
 $templateskin  = imagecreatefrompng($templateskinl);
 
-if($playerskin == False || $templateskin == False) {
+if(!$playerskin) {$playerskin = imagecreatefrompng("./assets/images/steve.png");}
+if($templateskin == False) {
     die("There was an error. Send a message on the forum thread");
 } else {
     imagealphablending($playerskin, false);
