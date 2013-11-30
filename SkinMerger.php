@@ -1,7 +1,4 @@
 <?php
-error_reporting(0);
-/* Lets make the image merging work with this version of PHP */
-putenv('GDFONTPATH=' . realpath('.'));
 /* Making the image */
 
 $username      = $_GET["name"];
@@ -14,9 +11,14 @@ $templateskin  = imagecreatefrompng($templateskinl);
 if($playerskin == False || $templateskin == False) {
     die("There was an error. Send a message on the forum thread");
 } else {
-    /* Transparency */
+    imagealphablending($playerskin, false);
+    $transparency = imagecolorallocatealpha($playerskin, 0, 0, 0, 127);
+    imagefill($playerskin, 0, 0, $transparency);
+    imagesavealpha($playerskin, true);
+    imagealphablending($playerskin, true);
     imagesavealpha($templateskin, true);
     imagealphablending($templateskin, true);
+
     imagecopy($playerskin, $templateskin, 0, 0, 0, 0, 64, 32);
     //lets display it
     header("Content-type: image/png");
