@@ -56,8 +56,12 @@
                         <option value="RaindeerHat">Raindeer Hat</option>
                         <option value="jeans_hoodie">Jeans and Hoodie</option>
                         <option value="assasin">Assasin</option>
+                        <option value="AssasinsCreed">Assasin Creed</option>
+                        <option value="assasin">Assasin</option>
                         <option value="hoodie">Just Hoodie</option>
                         <option value="luigi">Luigi</option>
+                        <option value="Mario">Mario</option>
+                        <option value="Mario2">Mario Two</option>
                         <option value="dino">Dinosaur</option>
 					</select>
 					<div id="skinImg2" class="preview">
