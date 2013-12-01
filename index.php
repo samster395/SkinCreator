@@ -52,6 +52,8 @@
 						<option value="dinoonesie">Red Dinosaur Onesie</option>
                         <option value="lion">Lion</option>
                         <option value="RaindeerHat">Raindeer Hat</option>
+                        <option value="jeans_hoodie">Jeans and Hoodie</option>
+                        <option value="assasin">Assasin</option>
 					</select>
 					<div id="skinImg2" class="preview">
 						<img src="SkinPreview.php">
