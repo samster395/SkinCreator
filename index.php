@@ -46,6 +46,8 @@
 						<option disabled selected>Select Secondary</option>
 						<option value="christmas">Christmas One</option>
 						<option value="christmas2">Christmas Two</option>
+                        <option value="christmas3">Christmas Three</option>
+                        <option value="christmas4">Christmas Four</option>
 						<option value="elf">Elf</option>
 						<option value="headset">Headset</option>
 						<option value="blueonesie">Blue Dinosaur Onesie</option>
@@ -54,6 +56,9 @@
                         <option value="RaindeerHat">Raindeer Hat</option>
                         <option value="jeans_hoodie">Jeans and Hoodie</option>
                         <option value="assasin">Assasin</option>
+                        <option value="hoodie">Just Hoodie</option>
+                        <option value="luigi">Luigi</option>
+                        <option value="dino">Dinosaur</option>
 					</select>
 					<div id="skinImg2" class="preview">
 						<img src="SkinPreview.php">
