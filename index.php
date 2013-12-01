@@ -50,6 +50,8 @@
 						<option value="headset">Headset</option>
 						<option value="blueonesie">Blue Dinosaur Onesie</option>
 						<option value="dinoonesie">Red Dinosaur Onesie</option>
+                        <option value="lion">Lion</option>
+                        <option value="RaindeerHat">Raindeer Hat</option>
 					</select>
 					<div id="skinImg2" class="preview">
 						<img src="SkinPreview.php">
